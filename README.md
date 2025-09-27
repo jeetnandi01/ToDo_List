@@ -5,7 +5,7 @@
 ## 📌 Table of Contents
 - <a href="#overview">Overview</a>
 - <a href="#Features">Features</a>
-- <a href="#Tools_Technologies">Tools & Technologies</a
+- <a href="#Tools_Technologies">Tools & Technologies</a>
 - <a href="#project-structure">project-structure</a>
 - <a href="#Screenshot">Screenshot</a>
 - <a href="#Task Model">Task Model</a>
@@ -24,7 +24,7 @@ Tasks are stored locally using *Hive*, ensuring offline-first experience.
 ---
 <h2><a class="anchor" id="Features"></a>Features</h2>
 
-- 📊 *Task Statistics*
+- 📊 Task Statistics
   - Total tasks count  
   - Pending tasks count  
   - Completed tasks count  
@@ -45,10 +45,10 @@ Tasks are stored locally using *Hive*, ensuring offline-first experience.
 
 <h2><a class="anchor" id="Tools_Technologies"></a>Tools & Technologies</h2>
 
-- *Framework:* Flutter (Dart)  
-- *Database:* Hive (Lightweight, NoSQL, Offline-first)  
-- *State Management:* Provider
-- *UI:* Material Design Widgets  
+- Framework: Flutter (Dart)  
+- Database: Hive (Lightweight, NoSQL, Offline-first)  
+- State Management: Provider
+- UI: Material Design Widgets  
 - GitHub
 
 ---
