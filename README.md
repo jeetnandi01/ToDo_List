@@ -1,7 +1,5 @@
 # 🧾 To Do Application
 
-Analyzing vendor efficiency and profitability to support strategic purchasing and inventory decisions using SQL, Python, and Power BI.
-
 ---
 
 ## 📌 Table of Contents
@@ -83,93 +81,99 @@ Tasks are stored locally using *Hive*, ensuring offline-first experience.
 
 *Example Task Model:*
 
-import 'package:hive/hive.dart';
-part 'task_model.g.dart';
-
-@HiveType(typeId: 0)
-class TaskModel extends HiveObject {
-  @HiveField(0)
-  String title;
-
-  @HiveField(1)
-  String description;
-
-  @HiveField(2)
-  DateTime date;
-
-  @HiveField(3)
-  String priority;
-
-  @HiveField(4)
-  bool isDone;
-
-  @HiveField(5)
-  String repeat;
-
-  @HiveField(6)
-  String category;
-
-  @HiveField(7)
-  int? startHour;
-  @HiveField(8)
-  int? startMinute;
-
-  @HiveField(9)
-  int? endHour;
-  @HiveField(10)
-  int? endMinute;
-
-  @HiveField(11)
-  bool isPinned;
-
-  TaskModel({
-    required this.title,
-    required this.description,
-    required this.date,
-    required this.priority,
-    this.isDone = false,
-    this.repeat = 'None',
-    this.category = 'General',
-    this.startHour,
-    this.startMinute,
-    this.endHour,
-    this.endMinute,
-    this.isPinned = false,
-  });
-}
+                  import 'package:hive/hive.dart';
+                  part 'task_model.g.dart';
+                  
+                  @HiveType(typeId: 0)
+                  class TaskModel extends HiveObject {
+                    @HiveField(0)
+                    String title;
+                  
+                    @HiveField(1)
+                    String description;
+                  
+                    @HiveField(2)
+                    DateTime date;
+                  
+                    @HiveField(3)
+                    String priority;
+                  
+                    @HiveField(4)
+                    bool isDone;
+                  
+                    @HiveField(5)
+                    String repeat;
+                  
+                    @HiveField(6)
+                    String category;
+                  
+                    @HiveField(7)
+                    int? startHour;
+                    @HiveField(8)
+                    int? startMinute;
+                  
+                    @HiveField(9)
+                    int? endHour;
+                    @HiveField(10)
+                    int? endMinute;
+                  
+                    @HiveField(11)
+                    bool isPinned;
+                  
+                    TaskModel({
+                      required this.title,
+                      required this.description,
+                      required this.date,
+                      required this.priority,
+                      this.isDone = false,
+                      this.repeat = 'None',
+                      this.category = 'General',
+                      this.startHour,
+                      this.startMinute,
+                      this.endHour,
+                      this.endMinute,
+                      this.isPinned = false,
+                    });
+                  }
 
 
 ---
 <h2><a class="anchor" id="Learning Goals"></a>Learning Goals</h2>
 
 - This project helped me practice:
-- ✅ Implementing CRUD operations with Hive
-- ✅ Designing task statistics & filters
-- ✅ Applying Provider for state management
-- ✅ Structuring a scalable Flutter app
-- ✅ Building responsive and clean UI
+  - ✅ Implementing CRUD operations with Hive
+  - ✅ Designing task statistics & filters
+  - ✅ Applying Provider for state management
+  - ✅ Structuring a scalable Flutter app
+  - ✅ Building responsive and clean UI
 
 ---
 <h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
 
-1. Clone the repository:
-bash
-git clone https://github.com/yourusername/vendor-performance-analysis.git
+    - Clone the repository:
+        bash
+        - git clone gh repo clone jeetnandi01/ToDo_List
+    
+    - Navigate into the folder
+       - cd todo-app
+    
+    - Install dependencies
+        - flutter pub get
+    
+    - Run the app
+        - flutter run
 
 ---
-<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
+<h2><a class="anchor" id="Future Improvements"></a>Future Improvements</h2>
 
-- Diversify vendor base to reduce risk
-- Optimize bulk order strategies
-- Reprice slow-moving, high-margin brands
-- Clear unsold inventory strategically
-- Improve marketing for underperforming vendors
-
+    - 🔔 Push notifications for task reminders
+    - ☁ Cloud sync with Firebase/Backend
+    - 📊 Dashboard with charts for task analytics
+    - 👥 User authentication for multi-user support
 ---
-<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
+<h2><a class="anchor" id="Deployment"></a>🌍 Deployment</h2>
 
-*Ayushi Mishra*  
-Data Analyst  
-📧 Email: techclasses0810@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/ayushi-mishra-30813b174/)  
-🔗 [Portfolio](https://www.youtube.com/@techclasses0810/)
+*GitHub Releases or provide a download link.*
+Example:
+## 🌍 Download APK
+[Click here to download](https://github.com/username/todo-app-hive/releases)
