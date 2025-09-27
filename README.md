@@ -16,10 +16,10 @@
 ---
 <h2><a class="anchor" id="overview"></a>Overview</h2>
 
--To-Do Application built using Flutter and Hive for offline data storage.
--This project demonstrates clean architecture, local database handling, and user-friendly task management.
--The app helps users efficiently manage daily tasks with features like priority levels, categories, and CRUD operations.  
--Tasks are stored locally using Hive, ensuring offline-first experience.
+- To-Do Application built using Flutter and Hive for offline data storage.
+- This project demonstrates clean architecture, local database handling, and user-friendly task management.
+- The app helps users efficiently manage daily tasks with features like priority levels, categories, and CRUD operations.
+- Tasks are stored locally using Hive, ensuring offline-first experience.
 
 ---
 <h2><a class="anchor" id="Features"></a>Features</h2>
