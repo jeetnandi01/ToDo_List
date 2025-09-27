@@ -5,16 +5,13 @@
 ## 📌 Table of Contents
 - <a href="#overview">Overview</a>
 - <a href="#Features">Features</a>
-- <a href="#dataset">Dataset</a>
-- <a href="#tools--technologies">Tools & Technologies</a>
-- <a href="#project-structure">Project Structure</a>
-- <a href="#data-cleaning--preparation">Data Cleaning & Preparation</a>
-- <a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
-- <a href="#research-questions--key-findings">Research Questions & Key Findings</a>
-- <a href="#dashboard">Dashboard</a>
-- <a href="#how-to-run-this-project">How to Run This Project</a>
-- <a href="#final-recommendations">Final Recommendations</a>
-- <a href="#author--contact">Author & Contact</a>
+- <a href="#Tools_Technologies">Tools & Technologies</a
+- <a href="#project-structure">project-structure</a>
+- <a href="#Screenshot">Screenshot</a>
+- <a href="#Task Model">Task Model</a>
+- <a href="#Learning Goals">Learning Goals</a>
+- <a href="#how-to-run-this-project">how-to-run-this-project</a>
+- <a href="#Future Improvements">Future Improvements</a>
 
 ---
 <h2><a class="anchor" id="overview"></a>Overview</h2>
@@ -25,7 +22,7 @@ The app helps users efficiently manage daily tasks with features like *priority 
 Tasks are stored locally using *Hive*, ensuring offline-first experience.
 
 ---
-<h2><a class="anchor" id="business-problem"></a>Features</h2>
+<h2><a class="anchor" id="Features"></a>Features</h2>
 
 - 📊 *Task Statistics*
   - Total tasks count  
@@ -46,7 +43,7 @@ Tasks are stored locally using *Hive*, ensuring offline-first experience.
 
 ---
 
-<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
+<h2><a class="anchor" id="Tools_Technologies"></a>Tools & Technologies</h2>
 
 - *Framework:* Flutter (Dart)  
 - *Database:* Hive (Lightweight, NoSQL, Offline-first)  
@@ -171,9 +168,3 @@ Tasks are stored locally using *Hive*, ensuring offline-first experience.
     - 📊 Dashboard with charts for task analytics
     - 👥 User authentication for multi-user support
 ---
-<h2><a class="anchor" id="Deployment"></a>🌍 Deployment</h2>
-
-*GitHub Releases or provide a download link.*
-Example:
-## 🌍 Download APK
-[Click here to download](https://github.com/username/todo-app-hive/releases)
