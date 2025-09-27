@@ -54,7 +54,7 @@
 ---
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
-![Project Structure](images/dashboard.png)
+![Project Structure](image/https://github.com/jeetnandi01/ToDo_List/blob/5b357d54400157ce946b2f1cd3a8239c3f3a628e/Project%20sturucture.png)
 
 ---
 <h2><a class="anchor" id="Screenshot"></a>Screenshot</h2>
