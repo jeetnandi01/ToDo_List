@@ -59,15 +59,17 @@
 ---
 <h2><a class="anchor" id="Screenshot"></a>Screenshot</h2>
 
-- *Home Screen (Task List + Stats)*  
-  ![Home Screenshot](screenshot_home.png)  
+- *Home Screen (Task List + Pending + Done + Total)*  
+   <img src="https://github.com/jeetnandi01/ToDo_List/blob/c3523c1c17d34405b27b6edaf81bc8f74f6e5e07/Todo4.jpg" alt="Alt Text" width="200" height="400">
 
 - *Add Task Screen (title, description, priority, category, date/time)*  
-  ![Add Task Screenshot](screenshot_add.png)  
+   <img src="https://github.com/jeetnandi01/ToDo_List/blob/c3523c1c17d34405b27b6edaf81bc8f74f6e5e07/todo2.jpg" alt="Alt Text" width="200" height="400">
 
 - *Completed Tasks Screen*  
-  ![Completed Screenshot](screenshot_completed.png)  
-
+   <img src="https://github.com/jeetnandi01/ToDo_List/blob/c3523c1c17d34405b27b6edaf81bc8f74f6e5e07/Todo5.jpg" alt="Alt Text" width="200" height="400">
+   
+- *Delete Task*  
+   <img src="https://github.com/jeetnandi01/ToDo_List/blob/c3523c1c17d34405b27b6edaf81bc8f74f6e5e07/todo1.jpg" alt="Alt Text" width="200" height="400">
 ---
 <h2><a class="anchor" id="Task Model"></a>Task Model</h2>
 
