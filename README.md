@@ -1,18 +1,35 @@
----**📝 To-Do List**
+# 🧾 To Do Application
 
-A **feature-rich To-Do List App** built using **Flutter** and **Hive** for offline data storage.  
-This project demonstrates **clean architecture, local database handling, and user-friendly task management**.
-
----
-
-## 📌 Project Overview
-The app helps users efficiently manage daily tasks with features like **priority levels, categories, statistics, and CRUD operations**.  
-Tasks are stored locally using **Hive**, ensuring offline-first experience.
+Analyzing vendor efficiency and profitability to support strategic purchasing and inventory decisions using SQL, Python, and Power BI.
 
 ---
 
-## 🚀 Features
-- 📊 **Task Statistics**
+## 📌 Table of Contents
+- <a href="#overview">Overview</a>
+- <a href="#Features">Features</a>
+- <a href="#dataset">Dataset</a>
+- <a href="#tools--technologies">Tools & Technologies</a>
+- <a href="#project-structure">Project Structure</a>
+- <a href="#data-cleaning--preparation">Data Cleaning & Preparation</a>
+- <a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a>
+- <a href="#research-questions--key-findings">Research Questions & Key Findings</a>
+- <a href="#dashboard">Dashboard</a>
+- <a href="#how-to-run-this-project">How to Run This Project</a>
+- <a href="#final-recommendations">Final Recommendations</a>
+- <a href="#author--contact">Author & Contact</a>
+
+---
+<h2><a class="anchor" id="overview"></a>Overview</h2>
+
+*To-Do Application* built using *Flutter* and *Hive* for offline data storage.  
+This project demonstrates *clean architecture, local database handling, and user-friendly task management*.
+The app helps users efficiently manage daily tasks with features like *priority levels, categories, and CRUD operations*.  
+Tasks are stored locally using *Hive*, ensuring offline-first experience.
+
+---
+<h2><a class="anchor" id="business-problem"></a>Features</h2>
+
+- 📊 *Task Statistics*
   - Total tasks count  
   - Pending tasks count  
   - Completed tasks count  
@@ -23,40 +40,136 @@ Tasks are stored locally using **Hive**, ensuring offline-first experience.
   - Date & Time  
   - Priority (High, Medium, Low)  
   - Category (Work, Personal, Shopping, etc.)  
-- 🗂️ Task categorization for better organization  
-- 🔔 Separate AppBars for **pending tasks** and **completed tasks**  
-- 💾 Local persistent storage with **Hive**  
-- 🎨 Clean, responsive, and user-friendly UI  
+- 🗂 Task categorization for better organization
+- 🌓 Dark mode support
+- 🔔 Separate AppBars for *pending tasks* and *completed tasks*  
+- 💾 Local persistent storage with *Hive*  
+- 🎨 Clean, responsive, and user-friendly UI 
 
 ---
 
-## 🛠️ Tools & Technologies
-- **Framework:** Flutter (Dart)  
-- **Database:** Hive (Lightweight, NoSQL, Offline-first)  
-- **State Management:** Provider (or Riverpod/Bloc if used)  
-- **UI:** Material Design Widgets  
+<h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
+
+- *Framework:* Flutter (Dart)  
+- *Database:* Hive (Lightweight, NoSQL, Offline-first)  
+- *State Management:* Provider
+- *UI:* Material Design Widgets  
+- GitHub
 
 ---
+<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
-## 📂 Project Structure
-
-lib/ 
-┣ models/          # Task model (Hive adapter) 
-┣ screens/         # Home, Add Task, Task Details, Completed Tasks 
-┣ widgets/         # Reusable components (task card, buttons, app bars) 
-┣ services/        # Hive database services 
-┗ main.dart        # App entry point
+![Project Structure](images/dashboard.png)
 
 ---
+<h2><a class="anchor" id="Screenshot"></a>Screenshot</h2>
 
-## 📸 Screenshots
-(Add screenshots of key screens with short explanations)  
-
-- **Home Screen (Task List + Stats)**  
+- *Home Screen (Task List + Stats)*  
   ![Home Screenshot](screenshot_home.png)  
 
-- **Add Task Screen (title, description, priority, category, date/time)**  
+- *Add Task Screen (title, description, priority, category, date/time)*  
   ![Add Task Screenshot](screenshot_add.png)  
 
-- **Completed Tasks Screen**  
+- *Completed Tasks Screen*  
   ![Completed Screenshot](screenshot_completed.png)  
+
+---
+<h2><a class="anchor" id="Task Model"></a>Task Model</h2>
+
+*Task Model:*
+- Each task is stored as an object in a Hive box.
+- Data persists locally on the device.
+- Adapters are generated for object serialization.
+
+*Example Task Model:*
+
+import 'package:hive/hive.dart';
+part 'task_model.g.dart';
+
+@HiveType(typeId: 0)
+class TaskModel extends HiveObject {
+  @HiveField(0)
+  String title;
+
+  @HiveField(1)
+  String description;
+
+  @HiveField(2)
+  DateTime date;
+
+  @HiveField(3)
+  String priority;
+
+  @HiveField(4)
+  bool isDone;
+
+  @HiveField(5)
+  String repeat;
+
+  @HiveField(6)
+  String category;
+
+  @HiveField(7)
+  int? startHour;
+  @HiveField(8)
+  int? startMinute;
+
+  @HiveField(9)
+  int? endHour;
+  @HiveField(10)
+  int? endMinute;
+
+  @HiveField(11)
+  bool isPinned;
+
+  TaskModel({
+    required this.title,
+    required this.description,
+    required this.date,
+    required this.priority,
+    this.isDone = false,
+    this.repeat = 'None',
+    this.category = 'General',
+    this.startHour,
+    this.startMinute,
+    this.endHour,
+    this.endMinute,
+    this.isPinned = false,
+  });
+}
+
+
+---
+<h2><a class="anchor" id="Learning Goals"></a>Learning Goals</h2>
+
+- This project helped me practice:
+- ✅ Implementing CRUD operations with Hive
+- ✅ Designing task statistics & filters
+- ✅ Applying Provider for state management
+- ✅ Structuring a scalable Flutter app
+- ✅ Building responsive and clean UI
+
+---
+<h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
+
+1. Clone the repository:
+bash
+git clone https://github.com/yourusername/vendor-performance-analysis.git
+
+---
+<h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
+
+- Diversify vendor base to reduce risk
+- Optimize bulk order strategies
+- Reprice slow-moving, high-margin brands
+- Clear unsold inventory strategically
+- Improve marketing for underperforming vendors
+
+---
+<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>
+
+*Ayushi Mishra*  
+Data Analyst  
+📧 Email: techclasses0810@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/ayushi-mishra-30813b174/)  
+🔗 [Portfolio](https://www.youtube.com/@techclasses0810/)
